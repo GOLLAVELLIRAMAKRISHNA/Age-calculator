@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b38db;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 350px;
+    height: 380px;
+    border-radius: 10px 10px 80px 10px;
+    box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.1), 0 9px 11px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+}
+
+.flex-content {
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px 0 30px 0;
+    border-bottom: 1.7px solid #6b38db;
+    position: relative;
+}
+
+.input-date,
+.input-month,
+.input-year {
+    width: auto;
+    height: auto;
+    padding: 0 17px 5px;
+}
+
+.input-date p,
+.input-month p,
+.input-year p {
+    font-size: 11px;
+    font-weight: 550;
+    margin-left: 4px;
+    padding-bottom: 2px;
+}
+
+.input-date input,
+.input-month input,
+.input-year input {
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    font-weight: 550;
+    border: 0.7px solid #c1b0e6;
+    border-radius: 2px;
+}
+
+.input-date input:focus {
+    outline: 1.3px solid hsl(259, 100%, 65%);
+}
+
+.input-year input:focus {
+    outline: 1.3px solid hsl(259, 100%, 65%);
+}
+
+.input-month input:focus {
+    outline: 1.3px solid hsl(259, 100%, 65%);
+}
+
+.input-date input,
+.input-month input,
+.input-year input::placeholder {
+    text-align: center;
+    font-size: 13px;
+}
+
+.input-date span,
+.input-month span,
+.input-year span {
+    font-size: 8.3px;
+    color: #f00;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.btn button {
+    position: absolute;
+    width: 100%;
+    top: -40px;
+    right: 0;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #703ddd;
+}
+
+.btn button img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.output-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+.output-content h3 {
+    padding-left: 40px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #290b69;
+}
+
+@media all and (max-width:300px) {
+    .container {
+        width: 280px;
+        height: 300px;
+        padding: 5px;
+    }
+
+    .flex-content {
+        margin: 5px;
+        padding: 12px 0 20px 0;
+    }
+
+    .input-date p,
+    .input-month p,
+    .input-year p {
+        font-size: 9px;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 10px;
+    }
+
+    .input-date span,
+    .input-month span,
+    .input-year span {
+        font-size: 7px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+    }
+
+    .output-content {
+        margin-top: 16px;
+    }
+
+    .output-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width:301px) {
+    .container {
+        width: 280px;
+        height: 300px;
+        padding: 5px;
+    }
+
+    .flex-content {
+        margin: 5px;
+        padding: 12px 0 20px 0;
+    }
+
+    .input-date p,
+    .input-month p,
+    .input-year p {
+        font-size: 9px;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 10px;
+    }
+
+    .input-date span,
+    .input-month span,
+    .input-year span {
+        font-size: 7px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+    }
+
+    .output-content {
+        margin-top: 16px;
+    }
+
+    .output-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width:500px) {
+    .container {
+        width: 300px;
+        height: 330px;
+        padding: 9px;
+    }
+
+    .flex-content {
+        margin: 10px;
+        padding: 15px 0 26px 0;
+    }
+
+    .input-date p,
+    .input-month p,
+    .input-year p {
+        font-size: 10px;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 12px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .output-content {
+        margin-top: 16px;
+    }
+
+    .output-content h3 {
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width:750px) {
+    .container {
+        width: 325px;
+        height: 350px;
+        padding: 12px;
+    }
+
+    .flex-content {
+        margin: 12px;
+        padding: 17px 0 28px 0;
+    }
+
+    .input-date p,
+    .input-month p,
+    .input-year p {
+        font-size: 12px;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 43px;
+        height: 43px;
+        margin-top: 0;
+    }
+
+    .output-content {
+        margin-top: 20px;
+    }
+
+    .output-content h3 {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width:950px) {
+    .container {
+        width: 350px;
+        height: 380px;
+        padding: 14px;
+    }
+
+    .flex-content {
+        margin: 14px;
+        padding: 19px 0 30px 0;
+    }
+
+    .input-date p,
+    .input-month p,
+    .input-year p {
+        font-size: 13px;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .output-content {
+        margin-top: 24px;
+    }
+
+    .output-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width:1150px) {
+    .container {
+        width: 370px;
+        height: 395px;
+        padding: 16px;
+    }
+
+    .flex-content {
+        margin: 16px;
+        padding: 22px 0 32px 0;
+    }
+
+    .input-date input,
+    .input-month input,
+    .input-year input::placeholder {
+        font-size: 16px;
+    }
+
+    .output-content {
+        margin-top: 26px;
+    }
+
+    .output-content h3 {
+        font-size: 26px;
+    }
+}

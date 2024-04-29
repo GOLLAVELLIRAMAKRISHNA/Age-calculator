@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FIND YOUR AGE </title>
+    <link rel="stylesheet" href="year.css" />
+    <link rel="icon" href="result-img/calculator.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-content">
+            <div class="input-date">
+                <p>DAY</p>
+                <input type="text" maxlength="2" placeholder="DD" id="DD" />
+                <span id="err-date"></span>
+            </div>
+            <div class="input-month">
+                <p>MONTH</p>
+                <input type="text" maxlength="2" placeholder="MM" class="MM" />
+                <span id="err-month"></span>
+            </div>
+            <div class="input-year">
+                <p>YEAR</p>
+                <input type="text" maxlength="4" placeholder="YYYY" class="YYYY" />
+                <span id="err-year"></span>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="button"><img src="result-img/icon-arrow.svg" alt="button-img"></button>
+        </div>
+        <div class="output-content">
+            <h3><span id="output-year">_ _</span> Years</h3>
+            <h3><span id="output-month">_ _</span> Months</h3>
+            <h3><span id="output-day">_ _</span> Days</h3>
+        </div>
+    </div>
+    <script src="year.js"></script>
+</body>
+
+</html>
